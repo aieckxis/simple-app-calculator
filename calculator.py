@@ -13,6 +13,21 @@ while True:
         except ValueError:
             print("Error: Invalid input. Please enter a number.")
 # Calculate the result based on the chosen operation
+    while True:
+        try:
+            if operation == "addition":
+                result = num1 + num2
+            elif operation == "subtraction":
+                result = num1 - num2
+            elif operation == "multiplication":
+                result = num1 * num2
+            elif operation == "division":
+                result = num1/num2
+            else:
+                if num2 == 0:
+                    print("Error: Division by zero is not allowed.")
+                else:
+                    result = num1/num2
 # Print the result
-print(operation)
+print(result)
 # Ask the user if they want to try again
