@@ -13,7 +13,7 @@ while True:
         except ValueError:
             print("Error: Invalid input. Please enter a number.")
     # Calculate the result based on the chosen operation
-    result = 0
+    result = None
     while True:
         try:
             if operation == "addition":
@@ -36,6 +36,7 @@ while True:
             print(f"Error: {str(e)}")
             break
     # Print the result
-    if result != 0:
+    if result is not None:
         print("Result: ", result)
+        break
 # Ask the user if they want to try again
