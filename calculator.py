@@ -11,7 +11,7 @@ while True:
             num2 = float(input("Enter the second number: "))
             break
         except ValueError:
-            print("Error: Invalid input. Please enter a number.")
+            print("\033[31mError: Invalid input. Please enter a number.\033[0m")
     # Calculate the result based on the chosen operation
     while True:
         try:
@@ -23,16 +23,16 @@ while True:
                 result = num1 * num2
             elif operation == "division":
                 if num2 == 0:
-                    raise ZeroDivisionError("Error: Cannot divide by zero.")
+                    raise ZeroDivisionError("\033[31mError: Cannot divide by zero.\033[0m")
                 result = num1 / num2
             else:
-                raise ValueError("Error: Invalid operation")
+                raise ValueError("\033[31mError: Invalid operation\033[0m")
                 break
         except ZeroDivisionError as e:
-            print(f"Error: {str(e)} Please enter the second number again: ")
+            print(f"{str(e)} Please enter the second number again: ")
             num2 = float(input("Enter the second number: "))
         except ValueError as e:
-            print(f"Error: {str(e)}")
+            print(f"{str(e)}")
             break
     # Print the result
         print("Result: ", result)
