@@ -4,7 +4,7 @@
 # Ask the user for the operation to perform
 while True:
     operation = input("Please choose a math operation (addition, subtraction, multiplication, division): ")
-# Ask the user for two numbers
+    # Ask the user for two numbers
     while True:
         try:
             num1 = float(input("Enter the first number: "))
@@ -12,7 +12,7 @@ while True:
             break
         except ValueError:
             print("Error: Invalid input. Please enter a number.")
-# Calculate the result based on the chosen operation
+    # Calculate the result based on the chosen operation
     if operation == "addition":
         result = num1 + num2
     elif operation == "subtraction":
@@ -26,8 +26,8 @@ while True:
         else:
             result = num1 / num2
     else:
-        print("Error")
+        print("Error: Invalid operation")
         continue
-# Print the result
-print("Result: ", result)
+    # Print the result
+    print("Result: ", result)
 # Ask the user if they want to try again
