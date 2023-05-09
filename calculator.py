@@ -34,7 +34,11 @@ while True:
         except ValueError as e:
             print(f"{str(e)}")
             break
-    # Print the result
+        # Print the result
         print("Result: ", result)
         break
-# Ask the user if they want to try again
+    # Ask the user if they want to try again
+    try_again = input("Do you want to try again? (Yes/No):").lower()
+    if try_again == "No":
+        print("Okay, thank you!")
+        break
