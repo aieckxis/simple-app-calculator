@@ -38,7 +38,7 @@ while True:
         print("Result: ", result)
         break
     # Ask the user if they want to try again
-    try_again = input("Do you want to try again? (Yes/No):").lower()
-    if try_again == "No":
+    try_again = input("Do you want to try again? (Y/N):").lower()
+    if try_again == "N":
         print("Okay, thank you!")
         break
