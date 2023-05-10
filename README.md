@@ -39,7 +39,11 @@ Next, the program performs the selected operation on the two numbers using if-el
 Finally, the program displays the result of the operation, prompts the user to try again, and exits the program if the user chooses not to continue.
 
 ## Potential Improvements
+- Add more operations, such as exponentiation and square root.
+- Allow the user to enter the operation symbol (+, -, *, /) instead of the word.
+- Add a feature to display the history of calculations.
+- Improve the error messages to be more informative.
 
 ## Conclusion
-
+This Python program allows the user to perform simple arithmetic operations on two numbers and handles invalid input and division by zero errors. With some potential improvements, this program could become a more powerful and useful tool for performing calculations.
 
